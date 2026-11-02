@@ -1,0 +1,17 @@
+@supports (-moz-appearance: none) {
+  #home-image {
+    min-width: 500px;
+  }
+
+  @media screen and (max-width: 980px) {
+    #home-image {
+      min-width: 0;
+    }
+
+    form input,
+    form select,
+    form textarea {
+      width: 100%;
+    }
+  }
+}

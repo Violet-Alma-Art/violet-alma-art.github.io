@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Violet Alma Art</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header-wrapper">
+        <!-- Moblie Menu Bar-->
+        <img
+          src="./images/menu.png"
+          id="mobile-menu-btn"
+          alt="menu icon for moblie"
+          style="position: absolute; left: 20px; top: 20px"
+        />
+
+        <div class="mobile-menu" style="display: none">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="about.html">About Me</a></div>
+          <div>
+            <div class="mobile-submenu-button">
+              <img
+                class="moblie-arrow"
+                width="10px"
+                src="./images/arrow.png"
+                style="display: inline"
+              />
+              <img
+                class="moblie-arrow-down"
+                width="10px"
+                style="display: none"
+                src="./images/arrow-down.png"
+              />
+              Portfolio
+            </div>
+            <div class="mobile-submenu" style="display: none">
+              <div><a href="portfolio/fiber-art.html">Fiber Art</a></div>
+              <div><a href="portfolio/lino-cut.html">Lino Cut</a></div>
+              <div><a href="portfolio/painting.html">Paintings</a></div>
+              <div class="current">
+                <a href="portfolio/medical-illustrations.html"
+                  >Medical Illustrations</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="current"><a href="commissions.html">Commissions</a></div>
+
+          <div><a href="contact.html">Contact</a></div>
+        </div>
+        <!-- Desktop Menu Bar-->
+        <header id="header" class="container">
+          <!-- Logo -->
+          <div id="logo">
+            <h1><a href="index.html">Violet Alma Art</a></h1>
+          </div>
+          <!-- Nav -->
+          <nav id="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Me</a></li>
+              <li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Portfolio
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="portfolio/fiber-art.html">Fiber Art</a>
+                    <a href="portfolio/lino-cut.html">Lino Cut</a>
+                    <a href="portfolio/painting.html">Paintings</a>
+                    <a href="portfolio/medical-illustrations.html"
+                      >Medical Illustrations</a
+                    >
+                  </div>
+                </div>
+              </li>
+              <li class="current">
+                <a href="commissions.html">Commissions</a>
+              </li>
+
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <!-- Main -->
+      <div id="main-wrapper">
+        <div class="container">
+          <div id="content">
+            <!-- Content -->
+
+            <div class="column">
+              <div>
+                <h2>Comissions</h2>
+                <p>
+                  Interested in working with me? Please use the contact form
+                  below to share some details about your project.
+                </p>
+              </div>
+              <h2>Interest Form</h2>
+              <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+                class="column"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="5543cbd1-6fbc-424c-ac01-de5d07b4957c"
+                />
+                <label>Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  width="inhert"
+                  maxlength="20"
+                />
+                <label>Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  maxlength="20"
+                  pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                />
+
+                <label>Type of project</label>
+                <select name="project-type" id="project-typet">
+                  <option value="">--Please choose an option--</option>
+                  <option value="watercolor-animals">
+                    Watercolor - Animals
+                  </option>
+                  <option value="watercolor-building">
+                    Watercolor - Building
+                  </option>
+                  <option value="indoor-mural">Indoor Mural</option>
+                  <option value="other">Other (please describe below)</option>
+                </select>
+
+                <label>Prefered Timeline</label>
+                <input name="timeline" required maxlength="200" />
+
+                <label>Description of project</label>
+                <p style="margin: 0px">Please include expected dimesions</p>
+                <textarea name="message" required maxlength="200"></textarea>
+                <button type="submit">Submit Form</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-wrapper">
+      <footer id="footer" class="container">
+        <div class="column" style="align-items: center">
+          <div id="copyright">Violet Alma Art&nbsp;</div>
+          <div>Website by <a href="https://claremason.net">Clare Mason</a></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script type="text/javascript" src="./assets/scripts.js"></script>
+</html>

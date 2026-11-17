@@ -57,6 +57,7 @@ body {
   line-height: 2.25em;
   color: #41320d;
 }
+
 p {
   font-family: CreatoDisplayRegular;
 }
@@ -323,8 +324,6 @@ footer div {
   vertical-align: middle;
 }
 
-/* Sizes */
-
 .contact-row {
   gap: 100px;
 }
@@ -332,8 +331,21 @@ footer div {
   display: grid;
   grid-template-columns: auto auto;
   padding: 10px;
+  gap: 50px;
+}
+.grid-image-wrapper {
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
 }
 
+.grid-image-vertical {
+  width: 500px;
+}
+
+.grid-image-horizontal {
+  height: 500px;
+}
 .container {
   width: 1200px;
 }
@@ -351,6 +363,8 @@ footer div {
   height: auto;
   object-fit: contain;
 }
+
+/* Sizes */
 
 @media screen and (max-width: 1280px) {
   .grid-container {
@@ -407,6 +421,14 @@ footer div {
     display: grid;
     grid-template-columns: auto;
     padding: 10px;
+  }
+
+  .grid-image-vertical {
+    width: 375px;
+  }
+
+  .grid-image-horizontal {
+    height: 375px;
   }
   body,
   input,
